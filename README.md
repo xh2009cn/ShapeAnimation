@@ -7,17 +7,15 @@
 ![image](./screenshots/star_demo.gif)![image](./screenshots/pause_demo.gif)![image](./screenshots/stop_demo.gif)
 
 ## 实现原理
-    ShapeAnimationView继承自SufaceView，使用DrawThread和Canvas绘制界面！
-    通过开启、暂停、停止、销毁等状态控制动画显示，这里既有停止又有销毁，是为了防止重复创建View，仅需复用View通过改变参数得到不同形状的动画呈现！
-    另外就是对于shape. XML文件的解析，所有的Shape都是通过在720*1280屏幕上描点绘制！PullParse解析得到描点数据后获取中心点和极值得到所有的有中心扩展演变的数据模型！
+ShapeAnimationView继承自SufaceView，使用DrawThread和Canvas绘制界面！
+通过开启、暂停、停止、销毁等状态控制动画显示，这里既有停止又有销毁，是为了防止重复创建View，仅需复用View通过改变参数得到不同形状的动画呈现！
+另外就是对于shape.XML文件的解析，所有的Shape都是通过在720*1280屏幕上描点绘制！PullParse解析得到描点数据后获取中心点和极值得到所有的有中心扩展演变的数据模型！
 
 ## 使用注意事项
-    Shape切换需要等上一个动画效果跑完后即state置为stop状态后才能够切换得到设置后的效果！
+Shape切换需要等上一个动画效果跑完后即state置为stop状态后才能够切换得到设置后的效果！
 
 ## 改进和期待
-    这个效果实现很久了，一直没有整理！
-    之前在[codepen.io](http://codepen.io/)上看到过一个用JS实现的更酷炫动画：不用绘制已有的效果，直接输入英文语句即可得到如同ShapeAnimation类似的酷炫动画来呈现这条语句！
-    这或许就是当前项目改进方向，省去xml文件绘制，直接由用户输入得到效果！
+这个效果实现很久了，一直没有整理！之前在[codepen.io](http://codepen.io/)上看到过一个用JS实现的更酷炫动画：不用绘制已有的效果，直接输入英文语句即可得到如同ShapeAnimation类似的酷炫动画来呈现这条语句！这或许就是当前项目改进方向，省去xml文件绘制，直接由用户输入得到效果！
 
 
 License
