@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hileone.animation.views.ShapeAnimationView
+        android:id="@+id/shape_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:text="Start"
+            style="@style/ActionButton"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:text="Pause/ReStart"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            style="@style/ActionButton"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:text="Stop"
+            android:paddingRight="14dp"
+            android:paddingLeft="28dp"
+            style="@style/ActionButton"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/attention_text"/>
+
+</RelativeLayout>

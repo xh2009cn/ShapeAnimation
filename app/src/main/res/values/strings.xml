@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ShapeAnimation</string>
+    <string name="attention_text">注意：改变形状，仅当动画跑完后设置才有效</string>
+</resources>
